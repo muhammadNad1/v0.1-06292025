@@ -1,0 +1,165 @@
+:root {
+  --primery: rgba(212, 66, 21, 0.897);
+  --bg: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: white;
+}
+
+.navbar {
+  border-bottom: 1px solid #b45f19;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem 7%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar .nav-judul {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: rgba(224, 217, 215, 0.897);
+}
+
+/* animation border bottom  
+
+@keyframes borderExpand {
+  from {
+    width: 0;
+    }
+    to {
+      width: 100%;
+      }
+      }
+      
+      /* // animation border bottom navbar start  
+      
+      .navbar .navbar-menu a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        }
+        
+        .navbar .navbar-menu a::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px; /* ketebalan border 
+          width: 0;
+          background: var(--primery); /* warna border 
+          transition: width 0.3s ease;
+          }
+          
+          .navbar .navbar-menu a:hover::after {
+            animation: borderExpand 0.5s forwards;
+            }
+
+ /* animation border bottom navbar end  */
+
+.navbar .nav-judul span {
+  color: rgba(212, 66, 21, 0.897);
+}
+
+.navbar .navbar-menu a {
+  display: inline-block;
+  margin: 0 1.2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.navbar .navbar-menu a:hover {
+  color: var(--primery);
+}
+
+.navbar .navbar-menu a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primery);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-menu a:hover::after {
+  transform: scaleX(0.6);
+}
+
+.navbar .navbar-extra a {
+  margin: 0 0.5rem;
+  color: #eaeaea;
+}
+
+#menu {
+  display: none;
+}
+
+/* Media Query */
+
+/* Mobile M */
+
+@media (max-width: 375px) {
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-menu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 30rem;
+    height: 100vh;
+    background: #fff;
+  }
+
+  .navbar .navbar-menu .active {
+  right: 0;
+}
+
+}
+
+
+/* Laptop */
+
+@media (max-width: 1024px) {
+}
+
+/* Laptop L */
+
+@media (max-width: 1440px) {
+}
+
+/* Desktop */
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 125%;
+  }
+}
